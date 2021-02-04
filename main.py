@@ -33,9 +33,13 @@ print(nato_alphabet_dict)
 
 # TODO 2. Create a list of the phonetic code words from a word that the user inputs.
 
-name = input('Enter your name : \n')
-phonetic_list = []
-for n in name:
-    phonetic_list.append(nato_alphabet_dict[n.upper()])
+name = input('Enter your name : \n').upper()
+
+phonetic_list = [nato_alphabet_dict[letter] for letter in name]
+
+# BOTH WORKS
+# phonetic_list = []
+# for n in name:
+#     phonetic_list.append(nato_alphabet_dict[n])
 
 print(phonetic_list)
