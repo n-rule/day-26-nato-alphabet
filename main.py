@@ -14,11 +14,7 @@ def generate_phonetic():
     else:
         print(phonetic_list)
 
-generate_phonetic()
 
-# BOTH WORKS
-# phonetic_list = []
-# for n in name:
-#     phonetic_list.append(nato_alphabet_dict[n])
+generate_phonetic()
 
 
